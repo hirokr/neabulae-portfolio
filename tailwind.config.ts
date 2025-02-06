@@ -9,10 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        
       },
+      fontFamily: {
+        mono : "var(--jetbrains-mono)",
+        space: "var(--space-mono)",
+      },
+      colors:{
+        yellow: "#FFD91A",
+        bg: "#FFFFFF",    
+        dashboard: "#FFF7D1",
+        blue: "#132238",
+        para_text: "#556070",
+        blue_text: "#1777E5",
+        footer_text: "#A5ACB5",
+      }
     },
   },
   plugins: [],
