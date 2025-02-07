@@ -5,6 +5,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button"; // Import button from shadcn
+import Image from "next/image";
 
 type Prop = {
   id: number;
@@ -39,10 +40,12 @@ const CarouselTest = ({ data }: { data: Prop[] }) => {
               className='min-w-full sm:min-w-[49%] lg:min-w-[32%] text-blue bg-white hover:shadow-2xl'
             >
               <CardContent className='p-6 flex flex-col items-center justify-center'>
-                <img
+                <Image
                   className='w-60 h-40 object-cover'
                   src={item.img}
                   alt={item.name}
+                  width={40}
+                  height={40}
                 />
                 <div className='text-center py-3'>
                   <p className={`text-sm ${item.doing? "text-blue_text": "text-para_text"}`}>{item.status}</p>
