@@ -15,7 +15,7 @@ const About = () => {
         />
       </div>
       <div className='basis-[80%] flex flex-col justify-between items-start  gap-1 lg:gap-3'>
-        <h1 className='font-bold lg:text-xl'>Hello, I'm Ralph Edward.</h1>
+        <h1 className='font-bold lg:text-xl'>Hello, I&apos;m Ralph Edward.</h1>
         <p className='text-[10px]/3 lg:text-sm/5'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quidem,
           sunt delectus reiciendis ipsum voluptatum officia consectetur? Ea,
