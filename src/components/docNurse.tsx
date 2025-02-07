@@ -40,7 +40,7 @@ const stories = [
 
 const DocNurse: React.FC = () => {
   return (
-    <div className='container bg-blue min-w-full py-14 flex-col font-mono'>
+    <div className='container bg-blue min-w-full py-14 flex-col lg:flex-row items-center justify-between font-mono'>
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         slidesPerView={1}
@@ -57,33 +57,32 @@ const DocNurse: React.FC = () => {
         {stories.map((item, index) => (
           <SwiperSlide
             key={index}
-            className='p-6 flex flex-col lg:flex-row items-center justify-between gap-6'
+            className='py-6 flex flex-col items-center justify-between gap-6'
           >
             {/* Text Content */}
-            <div className='flex flex-col items-start w-full lg:w-1/2'>
+            <div className='flex flex-col items-start w-full lg:w-1/2 gap-7'>
               <p className='uppercase text-yellow/60 text-sm'>{item.ins}.</p>
               <h1 className='text-white text-lg leading-relaxed'>
                 <q>{item.said}</q>
               </h1>
               <div className='mt-4'>
                 <h1 className='text-white font-bold'>{item.name}</h1>
-                <p className='text-yellow-400 text-sm'>{item.position}</p>
+                <p className='text-para_text text-sm'>{item.position}</p>
               </div>
             </div>
 
             {/* Image */}
-            <div className='w-32 h-32 lg:w-40 lg:h-40 relative '>
-              <Image
-                src={item.img}
-                alt='Doctor'
-                fill
-                className='object-contain rounded-lg'
-              />
-            </div>
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className='doccustomePagination text-center mt-4 z-10'></div>
+      <div className=' h-52 w-72 md:h-96 md:w-96 relative  '>
+        <Image
+          src={"/docnurs.png"}
+          alt='Doctor'
+          fill
+          className='object-contain  '
+        />
+      </div>
     </div>
   );
 };
