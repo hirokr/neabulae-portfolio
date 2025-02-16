@@ -52,37 +52,35 @@ const DocNurse: React.FC = () => {
         }}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         loop={true}
-        className='w-full my-5 p-2'
+        className='w-full my-5 '
       >
         {stories.map((item, index) => (
-          <SwiperSlide
-            key={index}
-            className='py-6 flex flex-col items-center justify-between gap-6'
-          >
+          <SwiperSlide key={index} className='w-full'>
             {/* Text Content */}
-            <div className='flex flex-col items-start w-full lg:w-1/2 gap-7'>
-              <p className='uppercase text-yellow/60 text-sm'>{item.ins}.</p>
-              <h1 className='text-white text-lg leading-relaxed'>
-                <q>{item.said}</q>
-              </h1>
-              <div className='mt-4'>
-                <h1 className='text-white font-bold'>{item.name}</h1>
-                <p className='text-para_text text-sm'>{item.position}</p>
+            <div className='p-6 flex flex-col md:flex-row items-center justify-between gap-6'>
+              <div className='flex flex-col items-start w-full lg:w-1/2 gap-7'>
+                <p className='uppercase text-yellow/60 text-sm'>{item.ins}.</p>
+                <h1 className='text-white text-lg leading-relaxed'>
+                  <q>{item.said}</q>
+                </h1>
+                <div className='mt-4'>
+                  <h1 className='text-white font-bold'>{item.name}</h1>
+                  <p className='text-para_text text-sm'>{item.position}</p>
+                </div>
               </div>
+              <Image
+                src={item.img}
+                alt='Doctor'
+                width={300}
+                height={300}
+                className='object-contain  '
+              />
             </div>
 
             {/* Image */}
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className=' h-52 w-72 md:h-96 md:w-96 relative  '>
-        <Image
-          src={"/docnurs.png"}
-          alt='Doctor'
-          fill
-          className='object-contain  '
-        />
-      </div>
     </div>
   );
 };

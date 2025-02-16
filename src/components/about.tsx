@@ -5,13 +5,13 @@ import { MdOutlineFileDownload } from "react-icons/md";
 
 const About = () => {
   return (
-    <div className='w-[80%] flex flex-col lg:flex-row gap-1 bg-white min-h-36 absolute -bottom-24 sm:-bottom-20 z-20 left-[10%] right-[10%] allcenter p-5 justify-between shadow-xl lg:gap-5'>
+    <div className='w-[80%] flex flex-col lg:flex-row gap-1 bg-white min-h-36 absolute  md:-bottom-12 lg:-bottom-24 z-20 left-[10%] right-[10%] allcenter p-5 justify-between shadow-xl lg:gap-5'>
       <div className='w-28 h-28 lg:w-44 lg:h-44 relative basis-[30%]'>
         <Image
           src='/doctorSide.png'
           alt='doc'
           fill
-          className='object-contain'
+          className='object-contain  mix-blend-multiply'
         />
       </div>
       <div className='basis-[80%] flex flex-col justify-between items-start  gap-1 lg:gap-3'>
