@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const Header = () => {
   const [menu, setMenu] = useState(false);
   return (
-    <header className='container allcenter  justify-between font-mono min-w-full top-0 relative '
+    <header className='container allcenter justify-between font-mono min-w-full top-0 relative'
     onClick={() => {
       setTimeout(() => setMenu(!menu), 200);
     }}
@@ -17,7 +17,7 @@ const Header = () => {
         Ralph <br />
         Edward.
       </h1>
-      <nav className='hidden text-sm md:flex justify-between items-center *:p-2 lg:*:text-base z-50'>
+      <nav className='hidden text-base md:flex justify-between items-center *:p-2 lg:*:text-lg z-50 *:min-w-20 *:allcenter'>
         <Link
           className='hover:bg-yellow hover:text-blue hover:scale-110'
           href='/'
@@ -27,7 +27,7 @@ const Header = () => {
         <Link className='hover:bg-yellow hover:scale-110' href='#about'>
           About
         </Link>
-        <Link className='hover:bg-yellow hover:scale-110' href='#cv'>
+        <Link className='hover:bg-yellow hover:scale-110 ' href='#cv'>
           CV
         </Link>
         <Link className='hover:bg-yellow hover:scale-110' href='#education'>
@@ -43,17 +43,17 @@ const Header = () => {
           Contact
         </Link>
       </nav>
-      <div className=' -top-7 right-0 z-10 md:hidden p-10 absolute '>
-        <div className='*:w-8 *:h-8 cursor-pointer  *:text-white right-5 absolute'>
+      <div className='-top-7 right-0 md:hidden p-10 absolute '>
+        <div className='*:w-8 *:h-8 cursor-pointer  *:text-white right-5 absolute z-50'>
           <IoMdMenu
-            className={`${menu ? "hidden" : "block"} hover:scale-110 z-10 bg-blue`}
+            className={`${menu ? "hidden" : "block"} hover:scale-110 z-40 bg-blue`}
             onClick={() => setMenu(!menu)}
           />
         </div>
         <motion.div
           className={`${
             menu ? "block" : "hidden"
-          } right-0 absolute top-0 w-screen bg-blue min-h-72 flex justify-center p-28`}
+          } right-0 absolute top-0 z-30  w-screen h-screen bg-blue min-h-72 flex justify-center p-28`}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
