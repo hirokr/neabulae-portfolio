@@ -8,37 +8,37 @@ import Footers from "@/components/Footers";
 const robot = localFont({
   src: [
     {
-      path: "./local_fonts/Roboto-ExtraBold.ttf",
+      path: "./fonts/Roboto-ExtraBold.ttf",
       weight: "800",
       style: "normal",
     },
     {
-      path: "./local_fonts/Roboto-Bold.ttf",
+      path: "./fonts/Roboto-Bold.ttf",
       weight: "700",
       style: "normal",
     },
     {
-      path: "./local_fonts/Roboto-SemiBold.ttf",
+      path: "./fonts/Roboto-SemiBold.ttf",
       weight: "600",
       style: "normal",
     },
     {
-      path: "./local_fonts/Roboto-medium.ttf",
+      path: "./fonts/Roboto-medium.ttf",
       weight: "500",
       style: "normal",
     },
     {
-      path: "./local_fonts/Roboto-Regular.ttf",
+      path: "./fonts/Roboto-Regular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "./local_fonts/Roboto-Light.ttf",
+      path: "./fonts/Roboto-Light.ttf",
       weight: "300",
       style: "normal",
     },
     {
-      path: "./local_fonts/Roboto-Thin.ttf",
+      path: "./fonts/Roboto-Thin.ttf",
       weight: "300",
       style: "normal",
     },
