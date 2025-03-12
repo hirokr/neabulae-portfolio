@@ -11,7 +11,7 @@ import { GoArrowRight } from "react-icons/go";
 
 const Footers = () => {
   return (
-    <footer className='bg-blue min-w-full text-bg flex-col container relative pt-5'>
+    <footer className='bg-blue min-w-full text-bg flex-col container relative pt-5' id="contact">
       <div className='flex flex-col gap-4 justify-between items-center sm:flex-row border-footer_text pb-6 sm:border-b-[1px] border-opacity-30 '>
         <h2 className='text-lg sm:text-xl font-bold py-2 sm:py-5 basis-1/2'>
           Looking for a Neurologists Doctor? <br/>Get in touch and let&apos;s chat!

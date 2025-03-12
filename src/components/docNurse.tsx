@@ -40,7 +40,10 @@ const stories = [
 
 const DocNurse: React.FC = () => {
   return (
-    <div className='container bg-blue min-w-full py-14 flex-col lg:flex-row items-center justify-between '>
+    <div
+      className='container bg-blue min-w-full py-14 flex-col lg:flex-row items-center justify-between '
+      id='education'
+    >
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         slidesPerView={1}
