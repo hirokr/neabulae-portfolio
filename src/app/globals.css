@@ -11,7 +11,7 @@ html {
     @apply transition-all duration-300;
   }
   body {
-    @apply font-space bg-bg text-blue underline-offset-2;
+    @apply font-roboto bg-bg text-blue underline-offset-2;
   }
   .container {
     @apply px-10 md:px-20 lg:px-32 xl:px-52;

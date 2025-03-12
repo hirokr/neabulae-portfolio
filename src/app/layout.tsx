@@ -1,22 +1,49 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono, Space_Mono } from "next/font/google";
+
+import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footers from "@/components/Footers";
 
-const mono = JetBrains_Mono({
-  subsets: ["latin"],
-  weight: ["100","200","300","400","500","600","700","800"],
-  display: "swap",
-  variable: "--jetbrains-mono",
-})
-
-const space = Space_Mono({
-  subsets: ["latin"],
-  weight: ["400","700"],
-  display: "swap",
-  variable: "--space-mono",
-})
+const robot = localFont({
+  src: [
+    {
+      path: "./local_fonts/Roboto-ExtraBold.ttf",
+      weight: "800",
+      style: "normal",
+    },
+    {
+      path: "./local_fonts/Roboto-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./local_fonts/Roboto-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "./local_fonts/Roboto-medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./local_fonts/Roboto-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./local_fonts/Roboto-Light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "./local_fonts/Roboto-Thin.ttf",
+      weight: "300",
+      style: "normal",
+    },
+  ],
+});
 
 export const metadata: Metadata = {
   title: "Doctors",
@@ -29,12 +56,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${mono.variable} ${space.variable} justify-center flex flex-col items-center `}>
-        <Header/>
+    <html lang='en'>
+      <body
+        className={` ${robot.className}justify-center flex flex-col items-center `}
+      >
+        <Header />
         {children}
-        <Footers/>
-        </body>
+        <Footers />
+      </body>
     </html>
   );
 }
