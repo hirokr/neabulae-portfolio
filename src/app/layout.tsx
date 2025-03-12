@@ -23,7 +23,7 @@ const robot = localFont({
       style: "normal",
     },
     {
-      path: "./fonts/Roboto-medium.ttf",
+      path: "./fonts/Roboto-Medium.ttf",
       weight: "500",
       style: "normal",
     },
